@@ -21,7 +21,7 @@ export default function ComponentsPortfolio() {
       <div className="fixed top-0 left-0 w-full z-50 p-3">
         <div className="flex items-center justify-between max-w-screen-sm mx-auto border border-white/20 backdrop-blur-sm rounded-full py-3 px-4">
           <a
-            href="/portfolio"
+            href="/"
             className="flex gap-2 items-center hover:scale-105 transition-transform duration-200 cursor-pointer"
           >
             {/* // icon */}
