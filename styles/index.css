@@ -121,6 +121,10 @@
   background-color: rgba(234, 179, 8, 0.1);
 }
 
+.bg-blue-opacity-10 {
+  background-color: rgba(96, 165, 250, 0.1);
+}
+
 html,
 body {
   scrollbar-width: none;

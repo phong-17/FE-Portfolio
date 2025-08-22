@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
-import * as motion from "motion/react-client";
 import { Variants } from "motion";
+import * as motion from "motion/react-client";
+import { ReactNode } from "react";
 
 type LazyLoadProps = {
   children: ReactNode;
