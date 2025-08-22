@@ -3,14 +3,13 @@
 import BackEndIcon from "@/components/Icons/BackEndIcon";
 import DatabaseIcon from "@/components/Icons/DatabaseIcon";
 import FrontEndIcon from "@/components/Icons/FrontEndIcon";
+import { DUMMY_TECHNICAL } from "@/utils/dummy";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import BoxItem from "./BoxItem";
 
-type TechnicalProps = {};
-
-export default function Technical(props: TechnicalProps) {
+export default function Technical() {
   return (
-    <div>
+    <div className="block">
       <div className="grid lg:grid-cols-2 md:gap-16 gap-10">
         <div className="block">
           <div className="border rounded-full border-[var(--color-yellow-400)] px-4 py-2 bg-yellow-opacity-10 w-fit">
@@ -75,161 +74,9 @@ export default function Technical(props: TechnicalProps) {
         </p>
 
         <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
-          <div
-            title="Laravel"
-            className="group flex flex-col items-center space-y-2 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-amber-500/50 transition-all duration-300 hover:scale-105"
-          >
-            <Image
-              src="/images/laravel.png"
-              alt="Laravel"
-              width={60}
-              height={60}
-              className="w-14 h-auto"
-            />
-          </div>
-
-          <div
-            title="Javascript"
-            className="group flex flex-col items-center space-y-2 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-amber-500/50 transition-all duration-300 hover:scale-105"
-          >
-            <Image
-              src="/images/javascript.png"
-              alt="javascript"
-              width={60}
-              height={60}
-              className="w-14 h-auto"
-            />
-          </div>
-
-          <div
-            title="Typescript"
-            className="group flex flex-col items-center space-y-2 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-amber-500/50 transition-all duration-300 hover:scale-105"
-          >
-            <Image
-              src="/images/typescript.png"
-              alt="typescript"
-              width={60}
-              height={60}
-              className="w-14 h-auto"
-            />
-          </div>
-
-          <div
-            title="Reactjs"
-            className="group flex flex-col items-center space-y-2 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-amber-500/50 transition-all duration-300 hover:scale-105"
-          >
-            <Image
-              src="/images/react.png"
-              alt="react"
-              width={60}
-              height={60}
-              className="w-14 h-auto"
-            />
-          </div>
-
-          <div
-            title="Nextjs"
-            className="group flex flex-col items-center space-y-2 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-amber-500/50 transition-all duration-300 hover:scale-105"
-          >
-            <Image
-              src="/images/nextjs.png"
-              alt="nextjs"
-              width={60}
-              height={60}
-              className="w-14 h-auto"
-            />
-          </div>
-
-          <div
-            title="HTML"
-            className="group flex flex-col items-center space-y-2 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-amber-500/50 transition-all duration-300 hover:scale-105"
-          >
-            <Image
-              src="/images/html.png"
-              alt="html"
-              width={60}
-              height={60}
-              className="w-14 h-auto"
-            />
-          </div>
-
-          <div
-            title="CSS"
-            className="group flex flex-col items-center space-y-2 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-amber-500/50 transition-all duration-300 hover:scale-105"
-          >
-            <Image
-              src="/images/css.png"
-              alt="css"
-              width={60}
-              height={60}
-              className="w-14 h-auto"
-            />
-          </div>
-
-          <div
-            title="Tailwind CSS"
-            className="group flex flex-col items-center space-y-2 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-amber-500/50 transition-all duration-300 hover:scale-105"
-          >
-            <Image
-              src="/images/tailwind.png"
-              alt="tailwind"
-              width={60}
-              height={60}
-              className="w-14 h-auto"
-            />
-          </div>
-
-          <div
-            title="Bootstrap"
-            className="group flex flex-col items-center space-y-2 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-amber-500/50 transition-all duration-300 hover:scale-105"
-          >
-            <Image
-              src="/images/bootstrap.png"
-              alt="bootstrap"
-              width={60}
-              height={60}
-              className="w-14 h-auto"
-            />
-          </div>
-
-          <div
-            title="My SQL"
-            className="group flex flex-col items-center space-y-2 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-amber-500/50 transition-all duration-300 hover:scale-105"
-          >
-            <Image
-              src="/images/mysql.png"
-              alt="mysql"
-              width={60}
-              height={60}
-              className="w-14 h-auto"
-            />
-          </div>
-
-          <div
-            title="GIT"
-            className="group flex flex-col items-center space-y-2 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-amber-500/50 transition-all duration-300 hover:scale-105"
-          >
-            <Image
-              src="/images/git.png"
-              alt="git"
-              width={60}
-              height={60}
-              className="w-14 h-auto"
-            />
-          </div>
-
-          <div
-            title="Figma"
-            className="group flex flex-col items-center space-y-2 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-amber-500/50 transition-all duration-300 hover:scale-105"
-          >
-            <Image
-              src="/images/figma.png"
-              alt="Figma"
-              width={60}
-              height={60}
-              className="w-14 h-auto"
-            />
-          </div>
+          {(DUMMY_TECHNICAL || []).map((item) => (
+            <BoxItem src={item.src} title={item.title} key={item.title} />
+          ))}
         </div>
       </div>
     </div>
